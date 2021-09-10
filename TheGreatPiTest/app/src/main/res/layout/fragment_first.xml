@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FirstFragment">
+
+    <TextView
+        android:id="@+id/textview_first"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="139dp"
+        android:layout_marginTop="140dp"
+        android:layout_marginEnd="139dp"
+        android:layout_marginBottom="221dp"
+        android:text="@string/takeThatJenks"
+        app:layout_constraintBottom_toTopOf="@+id/timedVibration"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/halfway"
+        android:layout_width="126dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="28dp"
+        android:text="@string/halfWay"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/timedVibration" />
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="126dp"
+        android:layout_height="49dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/changeDelay"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vibeLength"
+        app:layout_constraintVertical_bias="0.177" />
+
+    <EditText
+        android:id="@+id/editTextNumber"
+        android:layout_width="126dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="44dp"
+        android:ems="10"
+        android:hint="@string/defaultValue"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:minHeight="48dp"
+        android:singleLine="false"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/halfway"
+        app:layout_constraintVertical_bias="0.166"
+        tools:ignore="TextContrastCheck" />
+
+    <Button
+        android:id="@+id/vibeLength"
+        android:layout_width="126dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="36dp"
+        android:text="@string/vibeLength"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/stopVibrate" />
+
+    <Button
+        android:id="@+id/stopVibrate"
+        android:layout_width="126dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="48dp"
+        android:text="@string/stopVibrate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.77"
+        app:layout_constraintStart_toEndOf="@+id/timedVibration"
+        app:layout_constraintTop_toBottomOf="@+id/textview_first" />
+
+    <Button
+        android:id="@+id/timedVibration"
+        android:layout_width="126dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="44dp"
+
+        android:layout_marginTop="48dp"
+        android:text="@string/vibratePi"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textview_first" />
+
+</android.support.constraint.ConstraintLayout>
